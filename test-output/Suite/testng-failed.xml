@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="test.SwagLabLoginTest">
+        <methods>
+          <include name="LaunchApplication"/>
+          <include name="verifyIfWarningMessageIsDisplayedForLockedUser"/>
+        </methods>
+      </class> <!-- test.SwagLabLoginTest -->
+      <class name="test.Sample">
+        <methods>
+          <include name="verifyIfUserIsAbleToAddProductToCart"/>
+          <include name="LaunchApplication"/>
+        </methods>
+      </class> <!-- test.Sample -->
+      <class name="test.CartTest">
+        <methods>
+          <include name="verifyIfUserIsAbleToAddProductToCart"/>
+          <include name="verifyIfUserIsAbleToRemoveProduct"/>
+          <include name="LaunchApplication"/>
+        </methods>
+      </class> <!-- test.CartTest -->
+      <class name="test.SwagLabHomeTest">
+        <methods>
+          <include name="VerifySortFeatureForPriceHighToLow"/>
+          <include name="LaunchApplication"/>
+          <include name="VerifySortFeatureForPriceLowToHigh"/>
+          <include name="verifyIfUserIsAbleToAddProductToCart"/>
+        </methods>
+      </class> <!-- test.SwagLabHomeTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

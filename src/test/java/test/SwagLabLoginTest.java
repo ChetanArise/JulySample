@@ -1,5 +1,4 @@
 package test;
-
 import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
